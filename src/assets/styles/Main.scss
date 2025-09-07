@@ -42,6 +42,21 @@
         margin-block-end: 0px;
     }
 
+    .title {
+        font-size: 2.5em;
+        color: #5000ca;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .summary {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin: 20px 0;
+        max-width: 600px;
+        color: #e0e0e0;
+    }
+
     h1 {
         font-size: 5em;
         margin-block-start: 0px;
@@ -52,8 +67,12 @@
 .about-section .image-wrapper {
     z-index: 2;
     img {
-        width: 150px;
-        border-radius: 50%;
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover;
+        border: 4px solid #5000ca;
+        box-shadow: 0 8px 32px rgba(80, 0, 202, 0.3);
     }
 }
 
@@ -150,6 +169,12 @@
         .about-section .image-wrapper {
             padding-left: 5%;
             width: 100%;
+            text-align: center;
+            
+            img {
+                width: 250px;
+                height: auto;
+            }
         }
     }
 }

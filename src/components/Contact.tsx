@@ -53,8 +53,16 @@ function Contact() {
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
-          <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          <h1>Get In Touch</h1>
+          <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology!</p>
+          
+          <div className="contact-info">
+            <p><strong>Email:</strong> ishitasharma0318@gmail.com</p>
+            <p><strong>Phone:</strong> +1 (425) 200-7809</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/ishitasharma03</p>
+            <p><strong>GitHub:</strong> github.com/Ishitasharma0318</p>
+          </div>
+
           <Box
             ref={form}
             component="form"
@@ -104,7 +112,7 @@ function Contact() {
               helperText={messageError ? "Please enter the message" : ""}
             />
             <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
-              Send
+              Send Message
             </Button>
           </Box>
         </div>
