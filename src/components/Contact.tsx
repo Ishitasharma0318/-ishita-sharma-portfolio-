@@ -25,28 +25,20 @@ function Contact() {
     setEmailError(email === '');
     setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS */
-
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
-
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
+    if (name !== '' && email !== '' && message !== '') {
+      // Create mailto link with pre-filled content
+      const subject = `Portfolio Contact from ${name}`;
+      const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+      const mailtoLink = `mailto:ishitasharma0318@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
+      // Reset form
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
   };
 
   return (
@@ -57,10 +49,10 @@ function Contact() {
           <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology!</p>
           
           <div className="contact-info">
-            <p><strong>Email:</strong> ishitasharma0318@gmail.com</p>
-            <p><strong>Phone:</strong> +1 (425) 200-7809</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/ishitasharma03</p>
-            <p><strong>GitHub:</strong> github.com/Ishitasharma0318</p>
+            <p><strong>Email:</strong> <a href="mailto:ishitasharma0318@gmail.com">ishitasharma0318@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+14252007809">+1 (425) 200-7809</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ishitasharma03" target="_blank" rel="noreferrer">linkedin.com/in/ishitasharma03</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Ishitasharma0318" target="_blank" rel="noreferrer">github.com/Ishitasharma0318</a></p>
           </div>
 
           <Box
