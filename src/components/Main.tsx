@@ -12,45 +12,44 @@ function Main() {
       <div className="about-section">
         <div className="image-wrapper">
           {/* Replace with your actual profile picture */}
-          <img 
-            src="/profile-photo.jpeg" 
-            alt="Ishita Sharma - Software Development Engineer" 
+          <img
+            src="/profile-photo.jpeg"
+            alt="Ishita Sharma - Software Development Engineer"
           />
         </div>
         <div className="content">
           <div className="social_icons">
             <a href="https://github.com/Ishitasharma0318" target="_blank" rel="noreferrer">
-              <GitHubIcon/>
+              <GitHubIcon />
             </a>
             <a href="https://linkedin.com/in/ishitasharma03" target="_blank" rel="noreferrer">
-              <LinkedInIcon/>
+              <LinkedInIcon />
             </a>
             <a href="mailto:ishitasharma0318@gmail.com">
-              <EmailIcon/>
+              <EmailIcon />
             </a>
             <a href="tel:+14252007809">
-              <PhoneIcon/>
+              <PhoneIcon />
             </a>
           </div>
           <h1>Ishita Sharma</h1>
           <p className="title">Software Development Engineer</p>
           <p className="summary">
-            Computer Engineering graduate student with 3 years of experience at Amazon, engineering innovative solutions in Python,
-            SQL and Cloud Platforms, and applying AI/ML to deliver resilient systems, greater reliability, and cost saving results.
+            I'm Ishita Sharma, a Computer Engineering graduate student at Arizona State University with a passion for building intelligent, scalable software solutions. With three years of experience as a Senior Associate at Amazon, I've developed AWS-hosted automation systems and ML-powered tools that transformed compliance workflows, reducing manual effort by 50% and improving accuracy by 40%. My work spans the full stack, from backend services in Python and FastAPI to AI orchestration with LangGraph and GPT-4, always focused on delivering measurable impact at scale. Currently, I'm diving deep into AI-driven applications, recently winning Innovation Hacks 2025 with a one-click resume-to-portfolio generator and building dynamic pricing platforms that leverage multi-agent systems and demand forecasting. Whether it's automating complex workflows, designing intelligent agent architectures, or optimizing cloud infrastructure, I thrive on solving challenging problems that blend engineering rigor with cutting-edge AI. I'm actively seeking opportunities to bring my blend of production experience and graduate-level expertise to a forward-thinking team where I can continue pushing the boundaries of what's possible with code and AI.
           </p>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/Ishitasharma0318" target="_blank" rel="noreferrer">
-              <GitHubIcon/>
+              <GitHubIcon />
             </a>
             <a href="https://linkedin.com/in/ishitasharma03" target="_blank" rel="noreferrer">
-              <LinkedInIcon/>
+              <LinkedInIcon />
             </a>
             <a href="mailto:ishitasharma0318@gmail.com">
-              <EmailIcon/>
+              <EmailIcon />
             </a>
             <a href="tel:+14252007809">
-              <PhoneIcon/>
+              <PhoneIcon />
             </a>
           </div>
         </div>
