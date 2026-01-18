@@ -89,8 +89,14 @@
     h4 {
         font-size: 0.95rem;
         color: #666;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
         font-weight: 500;
+        flex-grow: 1;
+        /* Allow this to take available space if needed, pushing span down */
+        display: flex;
+        align-items: center;
+        /* Center text vertically if it wraps */
+        justify-content: center;
     }
 
     span {
@@ -98,6 +104,7 @@
         color: #999;
         font-weight: 400;
         margin-top: auto;
+        /* Push to bottom */
     }
 }
 
@@ -129,6 +136,10 @@
 
         h4 {
             color: #a9a9b3;
+            /* Ensure text wraps and doesn't overlap */
+            word-wrap: break-word;
+            margin-bottom: 15px;
+            /* Add more space below the issuer */
         }
 
         span {
