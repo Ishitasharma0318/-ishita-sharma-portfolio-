@@ -7,6 +7,12 @@ function Project() {
             <h1>Featured Projects</h1>
             <div className="projects-grid">
                 <div className="project">
+                    <a href="#" target="_blank" rel="noreferrer"><img src="/rideshare-pricing.jpg" className="zoom" alt="AI Powered Rideshare Dynamic Pricing" width="100%" /></a>
+                    <a href="#" target="_blank" rel="noreferrer"><h2>AI Powered Rideshare Dynamic Pricing and Demand Forecasting Platform</h2></a>
+                    <p>Engineered an AI-driven rideshare platform that dynamically adjusts pricing based on real-time demand, events, and traffic. Built a LangGraph multi-agent pricing engine where specialized agents analyze driver availability, rider demand, competitor pricing, and contextual factors (weather, events, traffic), orchestrated by GPT-4 to generate optimal surge multipliers. Implemented FastAPI WebSocket connections for live price updates and n8n workflows to ingest data from event and traffic APIs into a ChromaDB RAG system providing agents with historical pricing context. Developed Prophet time-series models for 30/60/90-day demand forecasting, enabling proactive driver allocation. Built a Next.js dashboard for operators to visualize demand heatmaps and surge zones, with MongoDB Atlas storing ride history and pricing decisions for analysis, targeting 25% peak-demand revenue uplift.</p>
+                </div>
+
+                <div className="project">
                     <a href="#" target="_blank" rel="noreferrer"><img src="/jetchain.png" className="zoom" alt="JetChain: Off-Chain Supply Management Platform for Jet Fuel" width="100%" /></a>
                     <a href="#" target="_blank" rel="noreferrer"><h2>JetChain: Off-Chain Supply Management Platform for Jet Fuel</h2></a>
                     <p>Built JetChain, a permissioned blockchain platform for jet fuel traceability from refineries to aircraft, preventing fraud and ensuring compliance. Developed Solidity smart contracts with role-based access control for Suppliers, Distributors, and Airlines, enforcing dual-approval custody transfers and immutable audit trails for batch IDs, quality certifications, and timestamps. Created a React and TailwindCSS frontend with Ethers.js wallet integration for real-time transfer initiation and batch history verification. Deployed on Polygon Amoy testnet for cost-efficient, Ethereum-compatible transactions.</p>
