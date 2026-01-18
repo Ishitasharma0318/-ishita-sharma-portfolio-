@@ -50,27 +50,27 @@
         display: none; // Hide title as requested
     }
 
-        color: #e0e0e0;
-    }
-
     .summary-container {
         max-height: 250px;
         overflow-y: auto;
         padding-right: 15px;
         margin: 20px 0;
-        
+
         /* Custom Scrollbar */
         &::-webkit-scrollbar {
             width: 8px;
         }
+
         &::-webkit-scrollbar-track {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 4px;
         }
+
         &::-webkit-scrollbar-thumb {
             background: #5000ca;
             border-radius: 4px;
         }
+
         &::-webkit-scrollbar-thumb:hover {
             background: #6a1bdb;
         }
@@ -79,12 +79,13 @@
             margin: 0;
             font-size: 1.1rem;
             line-height: 1.6;
+            color: #e0e0e0;
         }
     }
 
     .tech-stack {
         margin-top: 25px;
-        
+
         h3 {
             font-size: 1.5em;
             color: #5000ca;
@@ -97,7 +98,7 @@
             color: #333;
             font-weight: 500;
             font-size: 0.9rem;
-            
+
             &:hover {
                 background-color: #ffffff;
                 transform: translateY(-2px);
@@ -115,6 +116,7 @@
 
 .about-section .image-wrapper {
     z-index: 2;
+
     img {
         width: 300px;
         height: auto;
@@ -133,9 +135,9 @@
 
 @media screen {
     @media (max-width: 567px) {
-        .nav-left{
+        .nav-left {
             padding-top: 20px;
-            float:left;
+            float: left;
         }
 
         .nav-left img {
@@ -143,14 +145,14 @@
         }
 
         .nav-right {
-            float:right;
+            float: right;
         }
 
         .nav-right li {
             padding: 10px 15px;
-            list-style:none;
-            font-size:13px;
-            color:white;
+            list-style: none;
+            font-size: 13px;
+            color: white;
             width: 10%;
         }
 
@@ -195,7 +197,7 @@
             flex-direction: row;
             gap: 10px;
             color: white;
-    
+
             svg {
                 font-size: 1.8em;
             }
@@ -219,7 +221,7 @@
             padding-left: 5%;
             width: 100%;
             text-align: center;
-            
+
             img {
                 width: 250px;
                 height: auto;
