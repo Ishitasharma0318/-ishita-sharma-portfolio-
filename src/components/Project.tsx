@@ -1,5 +1,9 @@
 import React from "react";
 import '../assets/styles/Project.scss';
+import elasticFace from '../assets/images/elastic-face-recognition.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faExternalLinkAlt, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 
 function Project() {
     return (
@@ -16,6 +20,12 @@ function Project() {
                     <a href="#" target="_blank" rel="noreferrer"><img src="/jetchain.png" className="zoom" alt="JetChain: Off-Chain Supply Management Platform for Jet Fuel" width="100%" /></a>
                     <a href="#" target="_blank" rel="noreferrer"><h2>JetChain: Off-Chain Supply Management Platform for Jet Fuel</h2></a>
                     <p>Built JetChain, a permissioned blockchain platform for jet fuel traceability from refineries to aircraft, preventing fraud and ensuring compliance. Developed Solidity smart contracts with role-based access control for Suppliers, Distributors, and Airlines, enforcing dual-approval custody transfers and immutable audit trails for batch IDs, quality certifications, and timestamps. Created a React and TailwindCSS frontend with Ethers.js wallet integration for real-time transfer initiation and batch history verification. Deployed on Polygon Amoy testnet for cost-efficient, Ethereum-compatible transactions.</p>
+                </div>
+
+                <div className="project">
+                    <a href="#" target="_blank" rel="noreferrer"><img src={elasticFace} className="zoom" alt="Elastic Face Recognition Cloud Application" width="100%" /></a>
+                    <a href="#" target="_blank" rel="noreferrer"><h2>Elastic Face Recognition Cloud Application (AWS IaaS)</h2></a>
+                    <p>Architected a multi-tier face recognition application on AWS using Python, EC2, S3, and SQS to handle concurrent image processing requests. Developed a custom autoscaling controller algorithm (without AWS Auto Scaling) that dynamically scales application tier instances from 0 to 15 based on SQS queue depth, optimizing resource efficiency and cost. Integrated a PyTorch deep learning model in the backend tier for face recognition inference, decoupling web and application layers to maximize throughput and enable asynchronous processing of high-volume workloads.</p>
                 </div>
 
                 <div className="project">
