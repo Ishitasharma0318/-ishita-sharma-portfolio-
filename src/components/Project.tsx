@@ -7,6 +7,12 @@ function Project() {
             <h1>Featured Projects</h1>
             <div className="projects-grid">
                 <div className="project">
+                    <a href="#" target="_blank" rel="noreferrer"><img src="/jetchain.png" className="zoom" alt="JetChain: Off-Chain Supply Management Platform for Jet Fuel" width="100%" /></a>
+                    <a href="#" target="_blank" rel="noreferrer"><h2>JetChain: Off-Chain Supply Management Platform for Jet Fuel</h2></a>
+                    <p>Built JetChain, a permissioned blockchain platform for jet fuel traceability from refineries to aircraft, preventing fraud and ensuring compliance. Developed Solidity smart contracts with role-based access control for Suppliers, Distributors, and Airlines, enforcing dual-approval custody transfers and immutable audit trails for batch IDs, quality certifications, and timestamps. Created a React and TailwindCSS frontend with Ethers.js wallet integration for real-time transfer initiation and batch history verification. Deployed on Polygon Amoy testnet for cost-efficient, Ethereum-compatible transactions.</p>
+                </div>
+
+                <div className="project">
                     <a href="#" target="_blank" rel="noreferrer"><img src="/agentic-platform.png" className="zoom" alt="Agentic Customer Support Platform" width="100%" /></a>
                     <a href="#" target="_blank" rel="noreferrer"><h2>Agentic Customer Support Platform</h2></a>
                     <p>Architected a multi-agent customer support platform using LangGraph to intelligently route queries to specialized Billing, Technical, and Policy agents. Implemented RAG and CAG with ChromaDB vector database to ground responses in company knowledge, reducing hallucinations and ensuring accuracy. Built with FastAPI backend and Next.js frontend, integrating dual LLM backends (OpenAI GPT-4 for complex queries, AWS Bedrock for routine requests) to achieve 40% cost reduction while maintaining high response quality.</p>
