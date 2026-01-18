@@ -14,7 +14,7 @@ function Certificates() {
                         <FontAwesomeIcon icon={faMicrochip} size="3x" />
                     </div>
                     <h3>VIBE CODING - AI BuilderX Architect Program</h3>
-                    <h4>Arizona State University & AZNext</h4>
+                    <h4>AZNext</h4>
                     <span>December 2025</span>
                 </div>
 
