@@ -44,8 +44,11 @@
     text-align: center;
     border: 1px solid #eaeaea;
     position: relative;
-    overflow: hidden;
-    height: 100%;
+    /* overflow: hidden; Removed to prevent cutting off text */
+    height: auto;
+    /* Allow height to grow with content */
+    min-height: 100%;
+    /* Ensure it fills grid cell */
 
     &:hover {
         transform: translateY(-8px);
