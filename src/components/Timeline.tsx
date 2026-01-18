@@ -45,19 +45,6 @@ function Timeline() {
 
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="June 2017 - May 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faGraduationCap} />}
-          >
-            <h3 className="vertical-timeline-element-title">Bachelor's in Electronics and Telecommunications</h3>
-            <h4 className="vertical-timeline-element-subtitle">Savitribai Phule Pune University, MH, India - GPA: 3.54</h4>
-            <p>
-              Courses: Data Structures and Algorithms, Object Oriented Programming, Artificial Intelligence, Machine Learning
-            </p>
-          </VerticalTimelineElement>
-
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
             date="December 2019"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
@@ -67,6 +54,19 @@ function Timeline() {
             <p>
               Implemented dashboards in HTML/CSS & JavaScript to check outages & performance, enhancing detection by 25%.
               Integrated jQuery and Kendo UI to elevate front end functionality, increasing accuracy of error tracking by 20%.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="June 2017 - May 2021"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faGraduationCap} />}
+          >
+            <h3 className="vertical-timeline-element-title">Bachelor's in Electronics and Telecommunications</h3>
+            <h4 className="vertical-timeline-element-subtitle">Savitribai Phule Pune University, MH, India - GPA: 3.54</h4>
+            <p>
+              Courses: Data Structures and Algorithms, Object Oriented Programming, Artificial Intelligence, Machine Learning
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
