@@ -7,10 +7,11 @@
     align-items: center;
 
     h1 {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         color: #5000ca;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 700;
+        font-size: 2.5em;
     }
 }
 
@@ -33,42 +34,102 @@
 
 .certificate-card {
     background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid #eee;
+    border: 1px solid #eaeaea;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
 
     &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(80, 0, 202, 0.15);
+        border-color: #5000ca;
+
+        .cert-icon {
+            transform: scale(1.1);
+        }
     }
 
     .cert-icon {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         color: #5000ca;
+        transition: transform 0.3s ease;
+        background: rgba(80, 0, 202, 0.05);
+        padding: 20px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            font-size: 2.5rem;
+        }
     }
 
     h3 {
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 10px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 12px;
         color: #333;
+        line-height: 1.4;
     }
 
     h4 {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         color: #666;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         font-weight: 500;
     }
 
     span {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         color: #999;
+        font-weight: 400;
+        margin-top: auto;
+    }
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    .certificates-container h1 {
+        color: #ffffff;
+    }
+
+    .certificate-card {
+        background-color: #1a1b26;
+        /* Darker card background */
+        border: 1px solid #2f334d;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+            box-shadow: 0 12px 24px rgba(80, 0, 202, 0.25);
+            border-color: #5000ca;
+        }
+
+        .cert-icon {
+            background: rgba(80, 0, 202, 0.1);
+            color: #7b2cbf;
+        }
+
+        h3 {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #a9a9b3;
+        }
+
+        span {
+            color: #6a6a75;
+        }
     }
 }
