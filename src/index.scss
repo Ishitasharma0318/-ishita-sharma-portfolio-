@@ -1,3 +1,8 @@
+/* single accent colour used sparingly across the site */
+:root {
+  --pop: #fbbf24;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -15,8 +20,28 @@ code {
 
 .main-container {
   position: relative;
-  background-color: #0d1116;
+  z-index: 0;
+  isolation: isolate;
+  background-color: #0a0a16;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 10% 0%, rgba(124, 58, 237, 0.22), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 95% 35%, rgba(192, 38, 211, 0.12), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 20% 90%, rgba(80, 0, 202, 0.16), transparent 70%);
+  background-attachment: fixed;
+}
 
+/* animated ribbons sit behind all content but above the page background */
+.wave-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* frosted, translucent navbar so the background shows through */
+.navbar-fixed-top.MuiAppBar-root {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 a {
@@ -35,7 +60,8 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
 .navigation-bar {
   justify-content: space-between;
-  background-color: #0d1116;
+  background-color: rgba(10, 10, 22, 0.92);
+  border-bottom: 1px solid rgba(157, 107, 255, 0.12);
 
   button {
     font-size: 1.1rem;
@@ -93,10 +119,13 @@ p, a, h1, h2, h3, h4, h5, label, button {
 }
 
 .light-mode {
-  background-color: #f8f9fa;
+  background-color: #f6f4fc;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 10% 0%, rgba(124, 58, 237, 0.10), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 95% 35%, rgba(192, 38, 211, 0.06), transparent 70%);
 
   .navigation-bar {
-    background-color: #f8f9fa;
+    background-color: rgba(246, 244, 252, 0.7);
   }
 
   p, a, h1, h2, h3, h4, h5, label, button {
@@ -110,10 +139,6 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
   .navigation-bar svg {
     color: #0d1116;
-  }
-
-  .about-section {
-    background-image: url("./assets/images/bg-light.png");
   }
 
   .skills-container svg {
@@ -152,4 +177,32 @@ p, a, h1, h2, h3, h4, h5, label, button {
       padding: 5% 5%;
     }
   }
+}
+
+/* colourful underline under each section heading */
+#expertise h1,
+#history h1,
+#publications h1,
+#projects h1,
+#certificates h1,
+#contact h1 {
+  position: relative;
+  padding-bottom: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 64px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--pop);
+  }
+}
+
+#publications h1::after,
+#certificates h1::after {
+  left: 50%;
+  transform: translateX(-50%);
 }

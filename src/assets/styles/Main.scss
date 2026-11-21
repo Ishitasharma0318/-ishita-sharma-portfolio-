@@ -1,7 +1,3 @@
-.dark-mode .about-section {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 .about-section {
     display: flex;
     gap: 30px;
@@ -10,11 +6,6 @@
     width: 100%;
     padding: 0px 15%;
     min-height: 700px;
-    background-image: url("../images/bg-dark.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 .about-section .content {
@@ -88,7 +79,11 @@
 
         h3 {
             font-size: 1.5em;
-            color: #5000ca;
+            background: linear-gradient(90deg, #a78bfa, #e879f9);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
             margin-bottom: 10px;
             font-weight: 600;
         }
@@ -111,6 +106,41 @@
         font-size: 5em;
         margin-block-start: 0px;
         margin-block-end: 0px;
+        background: linear-gradient(90deg, #ffffff 0%, #ffffff 35%, #d8b4fe 60%, #ffffff 85%);
+        background-size: 250% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: name-shimmer 10s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes name-shimmer {
+    from { background-position: 0% 0; }
+    to { background-position: 100% 0; }
+}
+
+/* Tech Focus chips: quiet purple outline */
+.dark-mode .about-section .content .tech-stack .chip {
+    color: #e9e3ff !important;
+    background-color: rgba(124, 58, 237, 0.18) !important;
+    border: 1px solid rgba(167, 139, 250, 0.45);
+    font-weight: 600;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+
+    span {
+        color: inherit;
+    }
+
+    &:hover {
+        background-color: rgba(124, 58, 237, 0.3) !important;
+        border-color: var(--pop);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-section .content h1 {
+        animation: none;
     }
 }
 

@@ -27,7 +27,11 @@ const labelsFirst = [
 ];
 
 const labelsSecond = [
-    "AWS (Lambda, S3, SQS, EC2, DynamoDB, ECR, Bedrock)",
+    "AWS",
+    "Lambda",
+    "S3 / SQS",
+    "EC2 / ECR",
+    "Bedrock",
     "Docker",
     "Kubernetes",
     "Kafka",
@@ -64,7 +68,7 @@ const labelsFourth = [
     "RAG/CAG",
     "Vector DBs",
     "Tool Use / Function Calling",
-    "Prompt Engineering (CoT, ReAct)",
+    "Prompting (CoT, ReAct)",
     "AWS Bedrock / GPT-4",
     "Federated Learning",
     "Differential Privacy",

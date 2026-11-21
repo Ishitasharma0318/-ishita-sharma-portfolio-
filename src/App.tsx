@@ -11,6 +11,7 @@ import {
     Footer,
 } from "./components";
 import FadeIn from './components/FadeIn';
+import WaveBackground from './components/WaveBackground';
 import './index.scss';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 
     return (
         <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
+            <WaveBackground mode={mode} />
             <Navigation parentToChild={{ mode }} modeChange={handleModeChange} />
             <FadeIn transitionDuration={700}>
                 <Main />

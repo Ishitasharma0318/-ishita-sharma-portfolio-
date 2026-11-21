@@ -11,14 +11,51 @@
 
 .skills-container .skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 24px;
     overflow-x: auto;
 }
 
 .skills-container .skills-grid .skill {
     align-items: center;
     text-align: left;
+}
+
+.dark-mode .skills-container .skills-grid .skill {
+    position: relative;
+    padding: 24px;
+    border-radius: 14px;
+    background: #17142b;
+    border: 1px solid rgba(157, 107, 255, 0.2);
+    border-top: 3px solid #7c3aed;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+
+    > svg {
+        padding: 14px;
+        border-radius: 14px;
+        color: #c4b5fd;
+        background: rgba(124, 58, 237, 0.16);
+    }
+
+    h3 {
+        color: #ffffff;
+    }
+
+    .chip {
+        color: #ddd6fe !important;
+        background-color: rgba(124, 58, 237, 0.16) !important;
+        border: 1px solid rgba(167, 139, 250, 0.35);
+
+        span {
+            color: #ddd6fe;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: rgba(157, 107, 255, 0.45);
+        border-top-color: #7c3aed;
+    }
 }
 
 .chip {
