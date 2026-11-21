@@ -16,7 +16,7 @@ function Main() {
           {/* Replace with your actual profile picture */}
           <img
             src="/profile-photo.jpeg"
-            alt="Ishita Sharma - Software Development Engineer"
+            alt="Ishita Sharma - Full Stack Engineer"
           />
         </div>
         <div className="content">
@@ -27,7 +27,7 @@ function Main() {
             <a href="https://linkedin.com/in/ishitasharma03" target="_blank" rel="noreferrer">
               <LinkedInIcon />
             </a>
-            <a href="mailto:ishitasharma0318@gmail.com">
+            <a href="mailto:ishitasharma0324@gmail.com">
               <EmailIcon />
             </a>
             <a href="tel:+14252007809">
@@ -37,14 +37,14 @@ function Main() {
           <h1>Ishita Sharma</h1>
           <div className="summary-container">
             <p className="summary">
-              A Computer Engineering graduate student at Arizona State University with a passion for building intelligent, scalable software solutions. With three years of experience as a Senior Associate at Amazon, I've developed AWS-hosted automation systems and ML-powered tools that transformed compliance workflows, reducing manual effort by 50% and improving accuracy by 40%. My work spans the full stack, from backend services in Python and FastAPI to AI orchestration with LangGraph and GPT-4, always focused on delivering measurable impact at scale. Currently, I'm diving deep into AI-driven applications, recently winning Innovation Hacks 2025 with a one-click resume-to-portfolio generator and building dynamic pricing platforms that leverage multi-agent systems and demand forecasting. Whether it's automating complex workflows, designing intelligent agent architectures, or optimizing cloud infrastructure, I thrive on solving challenging problems that blend engineering rigor with cutting-edge AI. I'm actively seeking opportunities to bring my blend of production experience and graduate-level expertise to a forward-thinking team where I can continue pushing the boundaries of what's possible with code and AI.
+              Full Stack Engineer at Resilient, building AI-native tools for environmental compliance, and an M.S. Computer Engineering graduate from Arizona State University (GPA 3.90). I spent three years as a Software Engineer on Amazon's Global Solutions Risk and Compliance team, where I built Python and ML services that cut manual product review time by 60%, reduced SLA violations by 45%, and kept monitoring pipelines at 99.8% availability. Today I work across the stack, from React/Next.js interfaces and FastAPI services to multi-agent LLM systems with LangGraph, RAG, and AWS Bedrock. I led ML development of SentinelEdge, an on-device scam-call detector accepted at EMNLP 2026 (System Demonstrations) that won 1st place at the ASU Claude Hackathon, and I also won Innovation Hacks 2025 with a one-click resume-to-portfolio generator. I enjoy hard problems where careful engineering and applied AI meet, and I care about building software that is accurate, private, and genuinely useful to the people who rely on it.
             </p>
           </div>
 
           <div className="tech-stack">
             <h3>Tech Focus</h3>
             <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap sx={{ marginTop: '10px' }}>
-              {["DSA", "AI/ML", "GenAI", "System Design", "Full Stack", "AWS", "Python", "SQL"].map((tech) => (
+              {["Full Stack", "AI/ML", "GenAI & Agents", "Distributed Systems", "System Design", "AWS", "Python", "TypeScript"].map((tech) => (
                 <Chip key={tech} label={tech} className="chip" />
               ))}
             </Stack>
@@ -57,7 +57,7 @@ function Main() {
             <a href="https://linkedin.com/in/ishitasharma03" target="_blank" rel="noreferrer">
               <LinkedInIcon />
             </a>
-            <a href="mailto:ishitasharma0318@gmail.com">
+            <a href="mailto:ishitasharma0324@gmail.com">
               <EmailIcon />
             </a>
             <a href="tel:+14252007809">

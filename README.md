@@ -47,7 +47,7 @@ This portfolio can be deployed to any hosting service:
 
 ## Contact Information
 
-- **Email**: ishitasharma0318@gmail.com
+- **Email**: ishitasharma0324@gmail.com
 - **Phone**: +1 (425) 200-7809
 - **LinkedIn**: [linkedin.com/in/ishitasharma03](https://linkedin.com/in/ishitasharma03)
 - **GitHub**: [github.com/Ishitasharma0318](https://github.com/Ishitasharma0318)

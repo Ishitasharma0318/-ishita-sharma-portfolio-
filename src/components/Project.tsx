@@ -26,7 +26,7 @@ function Project() {
                 <div className="project">
                     <a href="#" target="_blank" rel="noreferrer"><img src={elasticFace} className="zoom" alt="Elastic Face Recognition Cloud Application" width="100%" /></a>
                     <a href="#" target="_blank" rel="noreferrer"><h2>Elastic Face Recognition Cloud Application (AWS IaaS)</h2></a>
-                    <p>Architected a multi-tier face recognition application on AWS using Python, EC2, S3, and SQS to handle concurrent image processing requests. Developed a custom autoscaling controller algorithm (without AWS Auto Scaling) that dynamically scales application tier instances from 0 to 15 based on SQS queue depth, optimizing resource efficiency and cost. Integrated a PyTorch deep learning model in the backend tier for face recognition inference, decoupling web and application layers to maximize throughput and enable asynchronous processing of high-volume workloads.</p>
+                    <p>Architected a multi-tier face recognition application on AWS using Python, PyTorch, EC2, S3, and SQS to handle concurrent image processing requests. Developed a custom autoscaling controller (without AWS Auto Scaling) that scales application-tier instances from 0 to 15 based on SQS queue depth and returns to 0 when idle, avoiding wasted compute. Integrated a PyTorch deep learning model in the backend tier for face recognition inference, decoupling web and application layers to maximize throughput and enable asynchronous processing of high-volume workloads.</p>
                 </div>
 
                 <div className="project">
@@ -38,13 +38,13 @@ function Project() {
                 <div className="project">
                     <a href="#" target="_blank" rel="noreferrer"><img src="/agentic-platform.png" className="zoom" alt="Agentic Customer Support Platform" width="100%" /></a>
                     <a href="#" target="_blank" rel="noreferrer"><h2>Agentic Customer Support Platform</h2></a>
-                    <p>Architected a multi-agent customer support platform using LangGraph to intelligently route queries to specialized Billing, Technical, and Policy agents. Implemented RAG and CAG with ChromaDB vector database to ground responses in company knowledge, reducing hallucinations and ensuring accuracy. Built with FastAPI backend and Next.js frontend, integrating dual LLM backends (OpenAI GPT-4 for complex queries, AWS Bedrock for routine requests) to achieve 40% cost reduction while maintaining high response quality.</p>
+                    <p>Architected a multi-agent LLM helpdesk using LangGraph that routes queries to specialized Billing, Technical, and Policy agents, resolving 75% of queries without human triage. Grounded responses with RAG over ChromaDB and AWS Bedrock across 1,000+ indexed documents to reduce hallucinations. Deployed the 3 agents as FastAPI services on AWS Lambda with a Next.js UI and n8n workflow automation, answering queries in under 3 seconds (p95).</p>
                 </div>
 
                 <div className="project">
                     <a href="#" target="_blank" rel="noreferrer"><img src="/ss-01.png" className="zoom" alt="One Click Resume to Portfolio Generator" width="100%" /></a>
-                    <a href="#" target="_blank" rel="noreferrer"><h2>One Click Resume to Portfolio Generator</h2></a>
-                    <p>Built a resume-to-portfolio generator in a 24-hr hackathon using AWS Bedrock (Claude 3) with React.js, and developed a Node.js + PostgreSQL backend. Applied AI methods like prompt engineering, text parsing, and semantic understanding to integrate LLMs into full-stack applications, converting resumes into styled websites in under 30 seconds.</p>
+                    <a href="#" target="_blank" rel="noreferrer"><h2>One Click Resume to Portfolio Generator | Innovation Hacks 2025, 1st Place</h2></a>
+                    <p>Won 1st place at Innovation Hacks 2025 by leading the team to build, in 24 hours, an LLM pipeline (AWS Bedrock, React, Node.js, PostgreSQL) that turns an uploaded resume into a live portfolio website in under 30 seconds. Applied prompt engineering, text parsing, and semantic understanding to integrate LLMs into a full-stack application.</p>
                 </div>
 
                 <div className="project">

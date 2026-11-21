@@ -1,0 +1,141 @@
+.publications-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 40px;
+        color: #5000ca;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 2.5em;
+    }
+}
+
+.publication-card {
+    width: 80%;
+    display: flex;
+    gap: 24px;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: left;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 24px rgba(80, 0, 202, 0.15);
+        border-color: #5000ca;
+    }
+
+    @media (max-width: 600px) {
+        width: 95%;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .pub-icon {
+        flex-shrink: 0;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(80, 0, 202, 0.05);
+        color: #5000ca;
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #333;
+        line-height: 1.4;
+        margin: 0 0 10px;
+    }
+
+    .pub-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+
+        .pub-venue {
+            color: #5000ca;
+            font-weight: 600;
+        }
+
+        .pub-award {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .pub-date {
+            color: #999;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 20px;
+        color: #444;
+        line-height: 1.6;
+
+        li + li {
+            margin-top: 6px;
+        }
+    }
+}
+
+.dark-mode {
+    .publications-container h1 {
+        color: #ffffff;
+    }
+
+    .publication-card {
+        background-color: #1a1b26;
+        border: 1px solid #2f334d;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+            box-shadow: 0 12px 24px rgba(80, 0, 202, 0.25);
+            border-color: #5000ca;
+        }
+
+        .pub-icon {
+            background: rgba(80, 0, 202, 0.1);
+            color: #7b2cbf;
+        }
+
+        h3 {
+            color: #ffffff;
+        }
+
+        .pub-meta {
+            .pub-venue {
+                color: #9d6bff;
+            }
+
+            .pub-award {
+                color: #a9a9b3;
+            }
+
+            .pub-date {
+                color: #6a6a75;
+            }
+        }
+
+        ul {
+            color: #c8c8d0;
+        }
+    }
+}

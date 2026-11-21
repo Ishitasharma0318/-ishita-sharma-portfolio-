@@ -8,26 +8,36 @@ import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
     "Python",
-    "SQL",
-    "JavaScript",
-    "ReactJS",
-    "NodeJS",
-    "HTML5",
-    "CSS",
     "Java",
     "C++",
-    "C#",
-    "Kotlin"
+    "C",
+    "JavaScript",
+    "TypeScript",
+    "SQL",
+    "Scala",
+    "Kotlin",
+    "ReactJS",
+    "Next.js",
+    "NodeJS",
+    "FastAPI",
+    "HTML5",
+    "CSS",
+    "REST APIs",
+    "Playwright"
 ];
 
 const labelsSecond = [
-    "AWS",
-    "Azure",
+    "AWS (Lambda, S3, SQS, EC2, DynamoDB, ECR, Bedrock)",
     "Docker",
+    "Kubernetes",
+    "Kafka",
+    "Microservices",
+    "CI/CD",
+    "Linux/UNIX",
     "Git",
+    "Azure",
     "Jenkins",
     "Jira",
-    "Figma",
     "Postman"
 ];
 
@@ -36,18 +46,28 @@ const labelsThird = [
     "MySQL",
     "MSSQL",
     "MongoDB",
+    "DynamoDB",
+    "ChromaDB",
     "Spark",
-    "Pandas"
+    "Pandas",
+    "Query Optimization",
+    "Schema Design"
 ];
 
 const labelsFourth = [
     "PyTorch",
+    "TensorFlow",
     "scikit-learn",
-    "NLP",
-    "LangGraph",
+    "XGBoost",
+    "Whisper",
+    "LangGraph Multi-Agent",
     "RAG/CAG",
-    "Prompt Engineering",
-    "GPT-4 Orchestration",
+    "Vector DBs",
+    "Tool Use / Function Calling",
+    "Prompt Engineering (CoT, ReAct)",
+    "AWS Bedrock / GPT-4",
+    "Federated Learning",
+    "Differential Privacy",
     "n8n"
 ];
 
@@ -60,7 +80,7 @@ function Expertise() {
                     <div className="skill">
                         <FontAwesomeIcon icon={faPython} size="3x" />
                         <h3>Full Stack Development</h3>
-                        <p>Experienced in building scalable web applications using modern technologies. Proficient in both frontend and backend development with expertise in Python, React, and Node.js.</p>
+                        <p>Build production web applications end to end, from React/Next.js interfaces with accessibility and Playwright testing to Python/FastAPI and Node.js services behind REST APIs.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Core Technologies:</span>
                             {labelsFirst.map((label, index) => (
@@ -72,7 +92,7 @@ function Expertise() {
                     <div className="skill">
                         <FontAwesomeIcon icon={faDocker} size="3x" />
                         <h3>Cloud & DevOps</h3>
-                        <p>Skilled in cloud platforms and DevOps practices. Experience with AWS, Azure, Docker, and CI/CD pipelines to ensure reliable and scalable deployments.</p>
+                        <p>Design distributed, cloud-native systems on AWS with Docker, Kubernetes, and Kafka, and run them in production with CI/CD, capacity planning, incident response, and SLA/SLO ownership.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tools & Platforms:</span>
                             {labelsSecond.map((label, index) => (
@@ -84,7 +104,7 @@ function Expertise() {
                     <div className="skill">
                         <FontAwesomeIcon icon={faDatabase} size="3x" />
                         <h3>Databases/Data</h3>
-                        <p>Proficient in SQL and NoSQL databases, data modeling, and big data technologies. Experienced in optimizing database performance and data pipelines.</p>
+                        <p>Work across SQL, NoSQL, and vector databases with a focus on schema design and query optimization over millions of records, plus large-scale data processing with Spark.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Data Stack:</span>
                             {labelsThird.map((label, index) => (
@@ -96,7 +116,7 @@ function Expertise() {
                     <div className="skill">
                         <FontAwesomeIcon icon={faBrain} size="3x" />
                         <h3>AI/ML and LLM</h3>
-                        <p>Specialized in machine learning, NLP, and Large Language Models. Experienced with RAG systems, prompt engineering, and orchestrating AI agents.</p>
+                        <p>Build multi-agent LLM systems with LangGraph and RAG, train ML models for real-world detection tasks, and apply privacy-preserving techniques like on-device inference, federated learning, and differential privacy.</p>
                         <div className="flex-chips">
                             <span className="chip-title">AI/ML Stack:</span>
                             {labelsFourth.map((label, index) => (
